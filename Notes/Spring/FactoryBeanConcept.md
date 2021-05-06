@@ -136,7 +136,7 @@ final String beanName = transformedBeanName(name);
 	 *
 	 * 返回beanName，去掉FactoryBean的&前缀，并且把name当做别名去aliasMap中寻找原始的beanName
 	 */
-	protected String transformedBeanName(String name) {  // &lubanFactoryBean lubanFactoryBean1 user1  &beanName
+	protected String transformedBeanName(String name) {  // &myFactoryBean myFactoryBean1 user1  &beanName
 		return canonicalName(BeanFactoryUtils.transformedBeanName(name));
 	}
 ```
